@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Welcome" />
       <section className="h-screen hero flex items-center justify-center">
-        <article className="bg-indigo-800 rounded-xl shadow-xl">
+        <article className="card">
           <Profile data={contentfulPerson} />
           <Links data={allContentfulLink} />/
         </article>

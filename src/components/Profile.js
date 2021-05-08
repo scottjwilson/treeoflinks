@@ -6,10 +6,12 @@ const Profile = ({ data }) => {
   const { name, twitter } = data
 
   return (
-    <div className="bg-indigo-500 p-5 flex flex-col items-center rounded-t-xl shadow-xl">
+    <div className="profile p-5 flex flex-col items-center rounded-t-xl ">
       <GatsbyImage image={image} className="rounded-full -mt-28" />
-      <h1>{name}</h1>
-      <h1>{twitter}</h1>
+      <div className="pt-4 space-y-2 flex flex-col text-center text-white">
+        <h1>{name}</h1>
+        <h1>{twitter}</h1>
+      </div>
     </div>
   )
 }
